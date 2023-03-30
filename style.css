@@ -280,3 +280,34 @@ footer {
     margin: 10px 0;
   }
 }
+
+/* updated responses */
+@media (max-width: 768px) {
+  /* adjust the layout for screens smaller than 768px */
+  .nav-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    margin-top: 20px;
+  }
+
+  .slider-text {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* adjust the layout for screens smaller than 480px */
+  .nav {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .nav a {
+    margin-bottom: 10px;
+  }
+}
