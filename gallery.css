@@ -364,4 +364,10 @@ footer {
   .logo-gallery {
     margin-top: -80px;
   }
+  .logo img {
+    height: 120px;
+    width: 120px;
+    top: 10px;
+    left: 10px;
+  }
 }

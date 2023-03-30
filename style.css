@@ -250,6 +250,7 @@ footer {
   top: 10px;
   left: 10px;
 }
+
 /* for ipad? */
 @media screen and (max-width: 850px) {
   .nav {
