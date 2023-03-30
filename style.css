@@ -1,0 +1,282 @@
+:root {
+  --primary-color: #3498db; /* nice shade of blue */
+  --text-color: #fff; /* white text color */
+  --metal: linear-gradient(to right, #d9d9d9, #757575, #d9d9d9);
+  --blue-metal: linear-gradient(to bottom right, #0077b6, #3498db);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+#wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+#slider-area {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#slider-area:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#slider-area .owl-item div {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* nav bar */
+#nav-area {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-area {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.nav a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0 15px;
+  padding: 10px;
+  transition: all 0.6s ease;
+  border: 2px solid #fff;
+  border-radius: 50px;
+}
+
+.nav a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* cales sig */
+.slider-text h2 {
+  font-family: "Splash", cursive;
+  font-size: 55px;
+  margin: 0;
+  color: rgb(188, 188, 188);
+  text-transform: uppercase;
+}
+
+.strokeme {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.slider-text h2 span {
+  font-family: "Nunito", sans-serif;
+  color: var(--primary-color);
+}
+
+.slider-text p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.slider-text a {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: #fff;
+  display: inline-block;
+  padding: 12px 45px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: all 0.6s ease;
+}
+
+.slider-text a:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.slider-text a.btn {
+  background-color: transparent;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1 0 200px;
+  padding: 5px;
+}
+
+.footer-logo h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--metal);
+}
+
+.footer-social {
+  flex: 1 0 200px;
+  text-align: right;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--metal);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+/* gallery */
+.background-gallery {
+  background: linear-gradient(to bottom, #262626 0%, #292929 50%, #1c1c1c 100%);
+}
+
+.gallery-text {
+  background: var(--blue-metal);
+  color: var(--text-color);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.gallery-text h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 55px;
+  margin: 0;
+  color: var(--metal);
+  text-transform: uppercase;
+}
+
+.gallery-text h2 span {
+  color: #fff;
+}
+
+.gallery-text p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo img {
+  height: 190px;
+  width: 190px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* for ipad? */
+@media screen and (max-width: 850px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav a {
+    margin: 10px 0;
+  }
+  .carousel {
+    width: 700px;
+    height: 500px;
+    margin: 2px;
+  }
+  .logo-gallery {
+    margin-top: -80px;
+  }
+}
+/* for mobile */
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav a {
+    margin: 10px 0;
+  }
+}
