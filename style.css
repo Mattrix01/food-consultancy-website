@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +18,8 @@ p {
 #wrapper {
   position: relative;
   height: 100vh;
+  min-height: calc(100vh - 120px); /* 120px is the height of the footer */
+  position: relative;
 }
 
 #slider-area {
@@ -139,6 +142,9 @@ footer {
   background-color: var(--primary-color);
   color: var(--text-color);
   padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-container {
@@ -208,35 +214,6 @@ footer {
   font-size: 14px;
 }
 
-/* gallery */
-.background-gallery {
-  background: linear-gradient(to bottom, #262626 0%, #292929 50%, #1c1c1c 100%);
-}
-
-.gallery-text {
-  background: var(--blue-metal);
-  color: var(--text-color);
-  padding: 50px 0;
-  text-align: center;
-}
-
-.gallery-text h2 {
-  font-family: "Nunito", sans-serif;
-  font-size: 55px;
-  margin: 0;
-  color: var(--metal);
-  text-transform: uppercase;
-}
-
-.gallery-text h2 span {
-  color: #fff;
-}
-
-.gallery-text p {
-  font-size: 18px;
-  color: #fff;
-}
-
 .logo {
   position: absolute;
   top: 0;
@@ -269,6 +246,9 @@ footer {
   .logo-gallery {
     margin-top: -80px;
   }
+  .slider-text {
+    margin-top: calc(200px + 1rem); /* adjust this value as needed */
+  }
 }
 /* for mobile */
 @media screen and (max-width: 600px) {
@@ -285,5 +265,8 @@ footer {
     width: 120px;
     top: 10px;
     left: 10px;
+  }
+  .slider-text {
+    margin-top: calc(280px + 1rem); /* adjust this value as needed */
   }
 }
