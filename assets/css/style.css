@@ -128,7 +128,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 130px;
+  max-height: 300px;
 }
 
 /*--------------------------------------------------------------
@@ -1851,5 +1851,12 @@ section {
 
   #footer .credits {
     padding-top: 4px;
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 850px) {
+  #header .logo img {
+    max-height: 200px;
   }
 }
