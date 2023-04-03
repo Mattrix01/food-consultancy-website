@@ -1854,6 +1854,10 @@ section {
   #header .logo img {
     max-height: 150px;
   }
+  .newbtn {
+    font-size: 1rem;
+    padding: 5px;
+  }
 }
 
 /* back images of services copy */
