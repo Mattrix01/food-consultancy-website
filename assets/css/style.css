@@ -1592,6 +1592,11 @@ section {
   background: #209dd8;
 }
 
+.newbtn {
+  font-size: 1.6rem;
+  width: 150px;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
