@@ -1593,8 +1593,11 @@ section {
 }
 
 .newbtn {
-  font-size: 1.6rem;
-  width: 150px;
+  font-size: 20px;
+  color: #1b1b1b;
+  background-color: #47b2e4;
+  border-radius: 50px;
+  padding: 12px 24px;
 }
 
 @keyframes animate-loading {
@@ -1853,10 +1856,6 @@ section {
 @media screen and (max-width: 850px) {
   #header .logo img {
     max-height: 150px;
-  }
-  .newbtn {
-    font-size: 1rem;
-    padding: 5px;
   }
 }
 
